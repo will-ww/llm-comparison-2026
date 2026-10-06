@@ -1,0 +1,100 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [48, 32, 400, 18]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 厂商剖析 · 3/10
+  - elementId: title
+    elementType: text
+    bounds: [48, 54, 860, 34]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: Google：多模态与性价比的「价格破坏者」
+  - elementId: bar
+    elementType: shape
+    bounds: [48, 94, 56, 4]
+    shapeName: rect
+    fill: {type: solid, color: "#4285F4"}
+  - elementId: lead
+    elementType: text
+    bounds: [48, 116, 864, 60]
+    content:
+      style: "$body"
+      lineHeight: 1.45
+      text: |
+        <p><strong>「哑铃型」的一年</strong>：Gemini 3.5 Pro 连续跳票三个月期间，Flash 档连发四代，3.7 Flash 一度在智能指数上反超自家旗舰；9 月 30 日 <strong>Gemini 4 Argon</strong> 突袭发布，以 $2/$10 推广价（缓存输入再降 95%）切入主力档。</p>
+  - elementId: k1
+    elementType: text
+    bounds: [48, 192, 200, 84]
+    content:
+      style: "$body"
+      text: |
+        <p><span style="font-size:30px; color:#4285F4; font-family:阿里妈妈数黑体">77.9%</span></p>
+        <p style="margin-top:2px"><span style="color:$muted">DeepSWE v1.1 长程工程第一（领先 Opus 5.5 约 3.7pp）</span></p>
+  - elementId: k2
+    elementType: text
+    bounds: [264, 192, 200, 84]
+    content:
+      style: "$body"
+      text: |
+        <p><span style="font-size:30px; color:#4285F4; font-family:阿里妈妈数黑体">91.7%</span></p>
+        <p style="margin-top:2px"><span style="color:$muted">LVBench 长视频理解第一</span></p>
+  - elementId: k3
+    elementType: text
+    bounds: [480, 192, 200, 84]
+    content:
+      style: "$body"
+      text: |
+        <p><span style="font-size:30px; color:#4285F4; font-family:阿里妈妈数黑体">1M</span></p>
+        <p style="margin-top:2px"><span style="color:$muted">最大输出 token（前代 64K 的 15 倍）</span></p>
+  - elementId: k4
+    elementType: text
+    bounds: [696, 192, 216, 84]
+    content:
+      style: "$body"
+      text: |
+        <p><span style="font-size:30px; color:#4285F4; font-family:阿里妈妈数黑体">全模态</span></p>
+        <p style="margin-top:2px"><span style="color:$muted">文本/图/音/视频/PDF 统一输入</span></p>
+  - elementId: body
+    elementType: text
+    bounds: [48, 290, 864, 92]
+    content:
+      style: "$body"
+      lineHeight: 1.55
+      text: |
+        <p>结构性优势是<strong>原生全模态</strong>与<strong>全档位定价侵略性</strong>：Gemini 3.1 Pro 长期是综合能力前十中最便宜的模型；3.8 Flash（$0.75/$3.75）占据「够用且极便宜」的生态位。但 Argon 优势并不全面：FrontierSWE v2 落后 GPT-6 Astra 10.5 个百分点，Terminal-Bench 4.0 落后 Opus 5.5 约 9 个百分点。</p>
+  - elementId: sep
+    elementType: shape
+    bounds: [48, 394, 864, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: weak
+    elementType: text
+    bounds: [48, 410, 864, 80]
+    content:
+      style: "$body"
+      lineHeight: 1.55
+      text: |
+        <p><strong>两个必须说明的限制</strong>：其一，Argon 发布首日仅通过 Fairwind 计划向经过审查的网络安全防御团队开放，全面开放时间未定；其二，厂商自报「19 项对比 13 项领先」尚未获第三方复现，输入上下文窗口亦无官方口径。</p>
+  - elementId: footer
+    elementType: text
+    bounds: [48, 510, 760, 16]
+    content:
+      style: "$caption"
+      wrap: false
+      text: 来源：VentureBeat、DataCamp、NeuralTrust、The Rundown AI、Yahoo Finance（2026-09/10）
+  - elementId: pageno
+    elementType: text
+    bounds: [880, 510, 32, 16]
+    content:
+      style: "$caption"
+      align: [right, top]
+      wrap: false
+      text: "08"

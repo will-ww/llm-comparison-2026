@@ -1,0 +1,103 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [48, 32, 400, 18]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 口径与提醒
+  - elementId: title
+    elementType: text
+    bounds: [48, 54, 860, 34]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: 使用本报告前，请记住三条提醒
+  - elementId: bar
+    elementType: shape
+    bounds: [48, 94, 56, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: n1
+    elementType: text
+    bounds: [48, 126, 56, 34]
+    content:
+      fontSize: 26
+      color: "$accent"
+      fontFamily: 阿里妈妈数黑体
+      wrap: false
+      text: "01"
+  - elementId: t1
+    elementType: text
+    bounds: [120, 126, 792, 84]
+    content:
+      style: "$body"
+      lineHeight: 1.55
+      text: |
+        <p><strong>警惕厂商自报基准</strong></p>
+        <p style="margin-top:3px"><span style="color:$muted">交叉比对显示自报值与中立框架复现的差距普遍在 5–20 个百分点，极端案例超过 17 个百分点。采购决策前，请用自己的任务集做小规模实测。</span></p>
+  - elementId: sep1
+    elementType: shape
+    bounds: [48, 222, 864, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: n2
+    elementType: text
+    bounds: [48, 240, 56, 34]
+    content:
+      fontSize: 26
+      color: "$accent"
+      fontFamily: 阿里妈妈数黑体
+      wrap: false
+      text: "02"
+  - elementId: t2
+    elementType: text
+    bounds: [120, 240, 792, 84]
+    content:
+      style: "$body"
+      lineHeight: 1.55
+      text: |
+        <p><strong>关注计费结构而非单价</strong></p>
+        <p style="margin-top:3px"><span style="color:$muted">长上下文阶梯价（Gemini、Grok 超 200K 翻倍）、峰谷定价（DeepSeek 峰时翻倍）、缓存折扣（Argon 缓存输入降 95%）对账单的影响经常超过模型选择本身。</span></p>
+  - elementId: sep2
+    elementType: shape
+    bounds: [48, 336, 864, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: n3
+    elementType: text
+    bounds: [48, 354, 56, 34]
+    content:
+      fontSize: 26
+      color: "$accent"
+      fontFamily: 阿里妈妈数黑体
+      wrap: false
+      text: "03"
+  - elementId: t3
+    elementType: text
+    bounds: [120, 354, 792, 84]
+    content:
+      style: "$body"
+      lineHeight: 1.55
+      text: |
+        <p><strong>为「换模型」留好架构余量</strong></p>
+        <p style="margin-top:3px"><span style="color:$muted">以当前 6–10 周的旗舰迭代速度，任何深度绑定单一模型特性的系统都会在半年内过时。API 抽象层与多模型路由已是从业标配。</span></p>
+  - elementId: disclaimer
+    elementType: text
+    bounds: [48, 458, 864, 40]
+    content:
+      style: "$caption"
+      text: |
+        <p>口径说明：AA 智能指数对国产模型的最近同口径快照为 2026 年 7–8 月；Terminal-Bench 各版本分数不可互比；Gemini 4 Argon 厂商基准发布时未获第三方复现；所有价格为发布时点公开牌价。本报告为一般性研究信息，不构成采购、投资或法律建议。</p>
+  - elementId: pageno
+    elementType: text
+    bounds: [880, 510, 32, 16]
+    content:
+      style: "$caption"
+      align: [right, top]
+      wrap: false
+      text: "20"

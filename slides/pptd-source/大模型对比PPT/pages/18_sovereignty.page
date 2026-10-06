@@ -1,0 +1,90 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [48, 32, 400, 18]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 可靠性与合规
+  - elementId: title
+    elementType: text
+    bounds: [48, 54, 860, 34]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: 可靠性与数据主权：政策制定者需要看到的另一条轴
+  - elementId: bar
+    elementType: shape
+    bounds: [48, 94, 56, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: h1
+    elementType: text
+    bounds: [48, 118, 416, 26]
+    content:
+      fontSize: 16
+      fontFamily: 阿里妈妈数黑体
+      color: "$ink"
+      wrap: false
+      text: 事实准确性与安全行为
+  - elementId: b1
+    elementType: text
+    bounds: [48, 150, 416, 200]
+    content:
+      style: "$body"
+      lineHeight: 1.55
+      text: |
+        <p><strong>Anthropic 是标杆</strong>：Fable 5.1 以 67% 创下 AA 实测最高事实准确率；Opus 5 被定位为「迄今最安全对齐的模型」，代价是攻击性网络安全任务刻意受限（漏洞武器化成功率 4/14，而受限更少的 Mythos 5 为 13/14）。</p>
+        <p style="margin-top:8px"><strong>OpenAI 的隐患在行为层</strong>：系统卡与 METR 均标记 GPT-5.6 Sol 存在偏高的 scheming 行为。</p>
+        <p style="margin-top:8px"><strong>xAI 进步但基数偏低</strong>：Grok 4.7 幻觉率 34% → 29%，仍是头部较高水平。</p>
+  - elementId: h2
+    elementType: text
+    bounds: [496, 118, 416, 26]
+    content:
+      fontSize: 16
+      fontFamily: 阿里妈妈数黑体
+      color: "$ink"
+      wrap: false
+      text: 数据主权的三条路径
+  - elementId: b2
+    elementType: text
+    bounds: [496, 150, 416, 200]
+    content:
+      style: "$body"
+      lineHeight: 1.55
+      text: |
+        <p><strong>路径一 · 开源私有化</strong>：对受《数据安全法》约束的国内敏感行业，Qwen / DeepSeek / GLM / Kimi 私有化部署几乎是唯一合规路径。</p>
+        <p style="margin-top:8px"><strong>路径二 · 区域托管</strong>：DeepSeek 官方 API 数据路由至中国服务器，西方企业经 Fireworks / Together 等托管；欧盟企业可选 Mistral 与欧洲托管。</p>
+        <p style="margin-top:8px"><strong>路径三 · 出口管制</strong>：Claude Mythos 5 仅限美国获批机构——尖端模型跨境流动已成为政策变量。</p>
+  - elementId: sep
+    elementType: shape
+    bounds: [48, 372, 864, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: takeaway
+    elementType: text
+    bounds: [48, 392, 864, 92]
+    content:
+      style: "$body"
+      lineHeight: 1.6
+      text: |
+        <p><span style="color:$accent"><strong>对决策者的含义</strong></span>：幻觉率与对齐水平决定模型能否进入法律、医疗、金融等严肃场景；数据主权决定「能用谁」；而开源权重生态的成熟度（MIT 许可、国产硬件训练案例）使「自主可控的准前沿智能」在 2026 年首次成为现实选项。模型采购已不只是技术决策，更是合规与供应链决策。</p>
+  - elementId: footer
+    elementType: text
+    bounds: [48, 510, 760, 16]
+    content:
+      style: "$caption"
+      wrap: false
+      text: 来源：Fello AI、EffectStory、Artificial Analysis、TheRouter、OpenAI 系统卡（2026-09/10）
+  - elementId: pageno
+    elementType: text
+    bounds: [880, 510, 32, 16]
+    content:
+      style: "$caption"
+      align: [right, top]
+      wrap: false
+      text: "18"

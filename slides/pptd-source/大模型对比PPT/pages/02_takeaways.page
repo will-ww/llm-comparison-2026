@@ -1,0 +1,124 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [48, 32, 400, 18]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 核心结论
+  - elementId: title
+    elementType: text
+    bounds: [48, 54, 860, 34]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: 三个判断：三强轮庄，中国开源进入全球前十，没有全能冠军
+  - elementId: bar
+    elementType: shape
+    bounds: [48, 94, 56, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: n1
+    elementType: text
+    bounds: [48, 128, 200, 48]
+    content:
+      fontSize: 40
+      color: "$accent"
+      fontFamily: 阿里妈妈数黑体
+      wrap: false
+      text: "57.6"
+  - elementId: n1cap
+    elementType: text
+    bounds: [48, 178, 200, 16]
+    content:
+      fontSize: 10
+      color: "$muted"
+      wrap: false
+      text: Opus 5.5 登顶 AA 智能指数
+  - elementId: t1
+    elementType: text
+    bounds: [280, 128, 632, 74]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>三强交替领跑。</strong>仅 2026 年 9 月，Arena 文本榜冠军三度易主（GPT-6 Astra → Opus 5.5 → Gemini 4 Argon 1524.8 Elo）。</p>
+        <p style="margin-top:6px"><span style="color:$muted">预测市场认为 Anthropic 有 71% 概率在年底持有最佳模型，但四家评估值非常接近。</span></p>
+  - elementId: sep1
+    elementType: shape
+    bounds: [48, 218, 864, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: n2
+    elementType: text
+    bounds: [48, 244, 200, 48]
+    content:
+      fontSize: 40
+      color: "$struct"
+      fontFamily: 阿里妈妈数黑体
+      wrap: false
+      text: 1/5–1/60
+  - elementId: n2cap
+    elementType: text
+    bounds: [48, 294, 200, 16]
+    content:
+      fontSize: 10
+      color: "$muted"
+      wrap: false
+      text: 中国开源旗舰相对美系旗舰的 API 价格
+  - elementId: t2
+    elementType: text
+    bounds: [280, 244, 632, 74]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>中国开源阵营全面跟进。</strong>DeepSeek V4 Pro、Qwen3.8-Max、Kimi K3、GLM-5.3 四款开源权重旗舰跻身全球综合能力前十至前十五。</p>
+        <p style="margin-top:6px"><span style="color:$muted">美国开源旗舰（Llama）退场后，开源能力榜前列已全面由中国厂商占据。</span></p>
+  - elementId: sep2
+    elementType: shape
+    bounds: [48, 334, 864, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: n3
+    elementType: text
+    bounds: [48, 360, 200, 48]
+    content:
+      fontSize: 40
+      color: "$accent"
+      fontFamily: 阿里妈妈数黑体
+      wrap: false
+      text: 0 个
+  - elementId: n3cap
+    elementType: text
+    bounds: [48, 410, 200, 16]
+    content:
+      fontSize: 10
+      color: "$muted"
+      wrap: false
+      text: "2026 年「全面最强」的模型数量"
+  - elementId: t3
+    elementType: text
+    bounds: [280, 360, 632, 74]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>不存在全能冠军。</strong>编码、推理、多模态、成本四个轴上的领跑者各不相同。</p>
+        <p style="margin-top:6px"><span style="color:$muted">选型的正确姿势是「按场景选档位」，而不是追榜单冠军。</span></p>
+  - elementId: footer
+    elementType: text
+    bounds: [48, 510, 700, 16]
+    content:
+      style: "$caption"
+      wrap: false
+      text: 来源：Artificial Analysis、LMArena、Kalshi、各厂商官方公告（2026-09/10）
+  - elementId: pageno
+    elementType: text
+    bounds: [880, 510, 32, 16]
+    content:
+      style: "$caption"
+      align: [right, top]
+      wrap: false
+      text: "02"

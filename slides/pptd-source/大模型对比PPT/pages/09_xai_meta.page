@@ -1,0 +1,97 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [48, 32, 400, 18]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 厂商剖析 · 4/10
+  - elementId: title
+    elementType: text
+    bounds: [48, 54, 860, 34]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: xAI、Meta、Mistral：刺客、转型者与退守者
+  - elementId: bar
+    elementType: shape
+    bounds: [48, 94, 56, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: xname
+    elementType: text
+    bounds: [48, 118, 208, 56]
+    content:
+      style: "$body"
+      text: |
+        <p><span style="font-size:18px; font-family:阿里妈妈数黑体">xAI</span></p>
+        <p style="margin-top:2px"><span style="color:$accent; font-size:11px"><strong>Grok 4.7 · $2/$6 · 月度迭代</strong></span></p>
+  - elementId: xbody
+    elementType: text
+    bounds: [272, 118, 640, 104]
+    content:
+      style: "$body"
+      lineHeight: 1.5
+      text: |
+        <p>「价格性能刺客」：7–9 月逐月发布 4.5→4.6→4.7，编码智能体指数排名第四。取舍鲜明——速度（约 188 tok/s）、价格、最少的内容限制与唯一的 X 实时数据接入，换取峰值差距（智能指数 46 vs 榜首 57.6）与「话痨」倾向：单任务平均输出 8.1 万 token，账单优势被部分抵消。</p>
+  - elementId: sep1
+    elementType: shape
+    bounds: [48, 238, 864, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: mname
+    elementType: text
+    bounds: [48, 256, 208, 56]
+    content:
+      style: "$body"
+      text: |
+        <p><span style="font-size:18px; font-family:阿里妈妈数黑体">Meta</span></p>
+        <p style="margin-top:2px"><span style="color:$accent; font-size:11px"><strong>Muse Spark · 闭源转型</strong></span></p>
+  - elementId: mbody
+    elementType: text
+    bounds: [272, 256, 640, 104]
+    content:
+      style: "$body"
+      lineHeight: 1.5
+      text: |
+        <p>年度最具争议的转向：4 月发布首个闭源模型 Muse Spark（原生全模态，Contemplating 模式 HLE 58%），深度绑定 Meta AI / Instagram / WhatsApp，权重不再开放；开源旗舰生态位事实上让渡给中国厂商。补偿性发布 30B 开放小模型 Muse Glimmer（Apache 2.0）。</p>
+  - elementId: sep2
+    elementType: shape
+    bounds: [48, 376, 864, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: miname
+    elementType: text
+    bounds: [48, 394, 208, 56]
+    content:
+      style: "$body"
+      text: |
+        <p><span style="font-size:18px; font-family:阿里妈妈数黑体">Mistral</span></p>
+        <p style="margin-top:2px"><span style="color:$accent; font-size:11px"><strong>退守欧洲细分</strong></span></p>
+  - elementId: mibody
+    elementType: text
+    bounds: [272, 394, 640, 96]
+    content:
+      style: "$body"
+      lineHeight: 1.5
+      text: |
+        <p>综合能力已脱离第一梯队（开源智能指数约 30 分，仅为 GLM-5.2 的六成），但 Large 3 / Medium 3.5 保有欧洲本土部署与 GDPR 合规的独特价值——对欧洲企业是主权合规选项，而非性能选项。</p>
+  - elementId: footer
+    elementType: text
+    bounds: [48, 510, 760, 16]
+    content:
+      style: "$caption"
+      wrap: false
+      text: 来源：Lindy.ai、Artificial Analysis、Miraflow、OpenRouter、腾讯云（2026-04 至 2026-10）
+  - elementId: pageno
+    elementType: text
+    bounds: [880, 510, 32, 16]
+    content:
+      style: "$caption"
+      align: [right, top]
+      wrap: false
+      text: "09"

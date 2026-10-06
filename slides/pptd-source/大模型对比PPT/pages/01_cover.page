@@ -1,0 +1,56 @@
+pageType: cover
+background:
+  type: solid
+  color: "#1C1E21"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [64, 92, 600, 22]
+    content:
+      fontSize: 12
+      color: "#E8B04B"
+      fontFamily: MiSans
+      bold: true
+      letterSpacing: 4
+      wrap: false
+      text: 2026 AI 峰会 · 行业全景观察（25–30 分钟 + 问答）
+  - elementId: rule1
+    elementType: shape
+    bounds: [64, 128, 72, 4]
+    shapeName: rect
+    fill: {type: solid, color: "#E8B04B"}
+  - elementId: title
+    elementType: text
+    bounds: [64, 162, 832, 130]
+    content:
+      fontSize: 46
+      color: "#F7F5F0"
+      fontFamily: 阿里妈妈数黑体
+      lineHeight: 1.3
+      text: |
+        <p>三强轮庄与中国开源阵营的崛起</p>
+        <p><span style="font-size:26px; color:#B9BDC4">2026 年主流大模型厂商旗舰能力对比：能力、价格与选型全景</span></p>
+  - elementId: subtitle
+    elementType: text
+    bounds: [64, 316, 832, 24]
+    content:
+      fontSize: 14
+      color: "#B9BDC4"
+      fontFamily: MiSans
+      wrap: false
+      text: 调研时间 2026 年 10 月 5 日 · 基于 100+ 个公开来源交叉验证
+  - elementId: vendors
+    elementType: text
+    bounds: [64, 420, 832, 20]
+    content:
+      fontSize: 11
+      color: "#7C828A"
+      fontFamily: MiSans
+      letterSpacing: 1
+      wrap: false
+      text: OpenAI / Anthropic / Google / xAI / Meta / Mistral / DeepSeek / 阿里巴巴 / 月之暗面 / 智谱 / 字节跳动 / MiniMax
+  - elementId: rule2
+    elementType: shape
+    bounds: [64, 452, 832, 1]
+    shapeName: rect
+    fill: {type: solid, color: "#3A3D42"}

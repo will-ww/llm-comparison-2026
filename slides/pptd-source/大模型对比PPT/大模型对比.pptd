@@ -1,0 +1,77 @@
+version: v2
+title: 三强轮庄与中国开源阵营的崛起——2026 主流大模型厂商旗舰能力对比
+size: [960, 540]
+customFonts:
+  - family: 阿里妈妈数黑体
+    src: "https://statics.kimi.ai/neo-design-static/p-font/阿里妈妈数黑体.ttf"
+  - family: MiSans
+    src: "https://statics.kimi.ai/neo-design-static/p-font/MiSans.ttf"
+theme:
+  colors:
+    bg: "#F7F5F0"
+    ink: "#1C1E21"
+    muted: "#6B7078"
+    accent: "#C4532E"
+    struct: "#2E5E4E"
+    faint: "#E4E0D6"
+    white: "#FFFFFF"
+  textStyles:
+    pageTitle:
+      fontSize: 25
+      color: "$ink"
+      fontFamily: 阿里妈妈数黑体
+    kicker:
+      fontSize: 11
+      color: "$accent"
+      fontFamily: MiSans
+      bold: true
+      letterSpacing: 2
+    body:
+      fontSize: 13
+      color: "$ink"
+      fontFamily: MiSans
+      lineHeight: 1.5
+    caption:
+      fontSize: 10
+      color: "$muted"
+      fontFamily: MiSans
+      lineHeight: 1.4
+  tableStyles:
+    default:
+      cellStyle:
+        fontSize: 11
+        fontFamily: MiSans
+        color: "$ink"
+        border: [null, null, {style: solid, width: 1, color: "$faint"}, null]
+        align: [left, middle]
+      firstRowStyle:
+        fill: {type: solid, color: "$ink"}
+        color: "#FFFFFF"
+        bold: true
+        fontSize: 11
+        border: null
+      bodyStyles:
+        - {fill: {type: solid, color: "#FFFFFF"}}
+        - {fill: {type: solid, color: "#F1EEE6"}}
+pages:
+  - pages/01_cover.page
+  - pages/02_takeaways.page
+  - pages/03_primer.page
+  - pages/04_landscape.page
+  - pages/05_cadence.page
+  - pages/06_openai.page
+  - pages/07_anthropic.page
+  - pages/08_google.page
+  - pages/09_xai_meta.page
+  - pages/10_china_overview.page
+  - pages/11_deepseek_qwen.page
+  - pages/12_kimi_glm.page
+  - pages/13_doubao_minimax.page
+  - pages/14_coding.page
+  - pages/15_multimodal.page
+  - pages/16_pricing.page
+  - pages/17_open_closed.page
+  - pages/18_sovereignty.page
+  - pages/19_selection.page
+  - pages/20_caveats.page
+  - pages/21_qa.page

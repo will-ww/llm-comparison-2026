@@ -1,0 +1,100 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [48, 32, 400, 18]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 厂商剖析 · 2/10
+  - elementId: title
+    elementType: text
+    bounds: [48, 54, 860, 34]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: Anthropic：编码与可靠性的双料冠军
+  - elementId: bar
+    elementType: shape
+    bounds: [48, 94, 56, 4]
+    shapeName: rect
+    fill: {type: solid, color: "#D97757"}
+  - elementId: tier
+    elementType: text
+    bounds: [48, 116, 864, 56]
+    content:
+      style: "$body"
+      lineHeight: 1.45
+      text: |
+        <p><strong>三档重构</strong>：天花板 Claude Mythos 5（仅限美国获批机构，涉出口管制）→ 旗舰 Fable 5.1（$10/$50）→ 主力 Opus 5.5（$4/$20，公开可得的综合能力最强）→ 性价比 Sonnet 5.5（$2/$10，「2026 年性价比最高的前沿模型」）。</p>
+  - elementId: k1
+    elementType: text
+    bounds: [48, 188, 200, 96]
+    content:
+      style: "$body"
+      text: |
+        <p><span style="font-size:30px; color:$accent; font-family:阿里妈妈数黑体">89.9%</span></p>
+        <p style="margin-top:2px"><span style="color:$muted">SWE-bench Pro 历史纪录</span></p>
+  - elementId: k2
+    elementType: text
+    bounds: [264, 188, 200, 96]
+    content:
+      style: "$body"
+      text: |
+        <p><span style="font-size:30px; color:$accent; font-family:阿里妈妈数黑体">66.4%</span></p>
+        <p style="margin-top:2px"><span style="color:$muted">Terminal-Bench 4.0（Vals 复现 65.15% 仍第一）</span></p>
+  - elementId: k3
+    elementType: text
+    bounds: [480, 188, 200, 96]
+    content:
+      style: "$body"
+      text: |
+        <p><span style="font-size:30px; color:$accent; font-family:阿里妈妈数黑体">39%</span></p>
+        <p style="margin-top:2px"><span style="color:$muted">Claude Code 职场采用率（Codex 为 16%）</span></p>
+  - elementId: k4
+    elementType: text
+    bounds: [696, 188, 216, 96]
+    content:
+      style: "$body"
+      text: |
+        <p><span style="font-size:30px; color:$accent; font-family:阿里妈妈数黑体">67%</span></p>
+        <p style="margin-top:2px"><span style="color:$muted">Fable 5.1 事实准确率（AA 实测最高）</span></p>
+  - elementId: body
+    elementType: text
+    bounds: [48, 296, 864, 90]
+    content:
+      style: "$body"
+      lineHeight: 1.55
+      text: |
+        <p>能力画像高度聚焦：<strong>编码、长程智能体、事实准确性</strong>三项均为行业标杆。Opus 5.5 以 AA 智能指数 57.6 分居首，并在 GDPval 职业任务榜以 1846 Elo 领跑；Opus 5 被官方定位为「迄今最安全对齐的模型」，欺骗性行为发生率最低。</p>
+  - elementId: sep
+    elementType: shape
+    bounds: [48, 398, 864, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: weak
+    elementType: text
+    bounds: [48, 414, 864, 76]
+    content:
+      style: "$body"
+      lineHeight: 1.55
+      text: |
+        <p><strong>短板</strong>：多模态输入以图像为主，视频/音频原生理解弱于 Gemini 与 GPT；旗舰档并列最贵；Opus 5.5 单任务 token 消耗偏高——Vals 测算其 Terminal-Bench 单任务成本为 GPT-6 Astra 的 <strong>2.3 倍</strong>，「便宜的单价不等于便宜的账单」。</p>
+  - elementId: footer
+    elementType: text
+    bounds: [48, 510, 760, 16]
+    content:
+      style: "$caption"
+      wrap: false
+      text: 来源：LLM Stats、Emergent、Vals/BenchLM、NeuralTrust、EffectStory（2026-09/10）
+  - elementId: pageno
+    elementType: text
+    bounds: [880, 510, 32, 16]
+    content:
+      style: "$caption"
+      align: [right, top]
+      wrap: false
+      text: "07"

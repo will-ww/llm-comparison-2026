@@ -1,0 +1,82 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [48, 32, 400, 18]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 厂商剖析 · 7/10
+  - elementId: title
+    elementType: text
+    bounds: [48, 54, 860, 34]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: 豆包与 MiniMax：C 端王者 × 全模态挑战者
+  - elementId: bar
+    elementType: shape
+    bounds: [48, 94, 56, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: v1name
+    elementType: text
+    bounds: [48, 118, 400, 28]
+    content:
+      fontSize: 18
+      color: "$ink"
+      fontFamily: 阿里妈妈数黑体
+      wrap: false
+      text: 字节跳动 豆包 2.0 · 闭源
+  - elementId: v1body
+    elementType: text
+    bounds: [48, 152, 416, 320]
+    content:
+      style: "$body"
+      lineHeight: 1.55
+      text: |
+        <p><strong>定位「生产环境复杂任务执行」</strong>：2.0 Pro 面向深度推理与长链路任务，官方口径取得 IMO、CMO 数学竞赛与 ICPC 编程竞赛金牌级成绩；定价分档（32K 内输入 3.2 元/百万 token），较前代降约一个数量级。</p>
+        <p style="margin-top:8px"><strong>护城河在消费端</strong>：语言自然度被评为国产模型中最接近真人写作；Seedance 2.0（视频）+ Seedream 5.0（图像）构成第一梯队 AIGC 创作矩阵，深度集成抖音、剪映。</p>
+        <p style="margin-top:8px"><strong>局限</strong>：闭源、仅云端、不支持私有化部署；2 月之后未发新旗舰，节奏落后于头部。</p>
+  - elementId: vsep
+    elementType: shape
+    bounds: [480, 118, 1, 356]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: v2name
+    elementType: text
+    bounds: [512, 118, 400, 28]
+    content:
+      fontSize: 18
+      color: "$ink"
+      fontFamily: 阿里妈妈数黑体
+      wrap: false
+      text: MiniMax M3 · 社区许可开源
+  - elementId: v2body
+    elementType: text
+    bounds: [512, 152, 400, 320]
+    content:
+      style: "$body"
+      lineHeight: 1.55
+      text: |
+        <p><strong>三要素齐备</strong>：国内首个同时齐备前沿编程、1M 上下文、原生多模态的开源模型（428B/23B，自研 MSA 稀疏注意力）。SWE-Bench Pro 超过 GPT-5.5 与 Gemini 3.1 Pro；OmniDocBench 多模态文档理解超过 Gemini 3.1 Pro。</p>
+        <p style="margin-top:8px"><strong>成本与规模</strong>：API 低至 $0.6/$2.4；全球企业开发者客户破百万、用户约 3 亿，语音/音频能力在国产阵营口碑最佳。</p>
+        <p style="margin-top:8px"><strong>两种生存策略</strong>：豆包做「体验与生态」，MiniMax 做「全模态与成本」。</p>
+  - elementId: footer
+    elementType: text
+    bounds: [48, 510, 760, 16]
+    content:
+      style: "$caption"
+      wrap: false
+      text: 来源：第一财经、东方财富、澎湃新闻、OpenRouter、什么值得买（2026-02 至 2026-09）
+  - elementId: pageno
+    elementType: text
+    bounds: [880, 510, 32, 16]
+    content:
+      style: "$caption"
+      align: [right, top]
+      wrap: false
+      text: "13"

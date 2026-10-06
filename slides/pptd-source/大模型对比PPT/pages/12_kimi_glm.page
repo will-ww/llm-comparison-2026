@@ -1,0 +1,82 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [48, 32, 400, 18]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 厂商剖析 · 6/10
+  - elementId: title
+    elementType: text
+    bounds: [48, 54, 860, 34]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: Kimi 与 GLM：智能体黑马 × 后训练专项冠军
+  - elementId: bar
+    elementType: shape
+    bounds: [48, 94, 56, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: v1name
+    elementType: text
+    bounds: [48, 118, 400, 28]
+    content:
+      fontSize: 18
+      color: "$ink"
+      fontFamily: 阿里妈妈数黑体
+      wrap: false
+      text: 月之暗面 Kimi K3 · MIT 权重
+  - elementId: v1body
+    elementType: text
+    bounds: [48, 152, 416, 320]
+    content:
+      style: "$body"
+      lineHeight: 1.55
+      text: |
+        <p><strong>史上最大开源权重模型</strong>：2.8T/104B。发布即获 AA 智能指数 <strong>57 分</strong>（189 款受测模型第四，开源历史最高），1679 Elo 登顶 Arena 前端编码榜（48 万余票盲测）。</p>
+        <p style="margin-top:8px"><strong>补短板</strong>：原生多模态 + 长程智能体编码（DeepSWE 67.5%、TB 2.1 88.3%，国产首位）；长文本基因保留，实测支持 200 万字级前文续写；创意写作 EQ-Bench 第五。</p>
+        <p style="margin-top:8px"><strong>边界</strong>：Vals 独立复测 Terminal-Bench 4.0 仅 19.7%，远低于厂商口径——国产模型自报与中立复现的落差普遍更大；单任务成本 $0.95 反低于 GPT-5.6 Sol，胜在 token 效率。</p>
+  - elementId: vsep
+    elementType: shape
+    bounds: [480, 118, 1, 356]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: v2name
+    elementType: text
+    bounds: [512, 118, 400, 28]
+    content:
+      fontSize: 18
+      color: "$ink"
+      fontFamily: 阿里妈妈数黑体
+      wrap: false
+      text: 智谱 GLM-5.3 · MIT 开源
+  - elementId: v2body
+    elementType: text
+    bounds: [512, 152, 400, 320]
+    content:
+      style: "$body"
+      lineHeight: 1.55
+      text: |
+        <p><strong>后训练 Scaling 的样本</strong>：冻结同一基座、纯靠后训练将编程能力提升约 50%——DeepSWE 46.2% → 66.9%，Terminal-Bench 3.0 从 4.6 暴增至 <strong>28.3</strong>。GLM-5.2 基于华为昇腾硬件训练，曾登顶开源智能指数。</p>
+        <p style="margin-top:8px"><strong>双专项</strong>：编程 + 网络安全——CyberGym 84.5% 登顶全球第一（累计发现 2436 个漏洞），ExploitBench 翻倍至 54.4%。</p>
+        <p style="margin-top:8px"><strong>代价</strong>：主版本纯文本、强制推理不可关闭；聚合榜 TB 4.0 复现 38.89% 低于厂商口径。适合私有化部署的中文代码工程与安全审计场景。</p>
+  - elementId: footer
+    elementType: text
+    bounds: [48, 510, 760, 16]
+    content:
+      style: "$caption"
+      wrap: false
+      text: 来源：SegmentFault、CellCog、BenchLM/Vals、EffectStory、Lynx Tech（2026-08 至 2026-10）
+  - elementId: pageno
+    elementType: text
+    bounds: [880, 510, 32, 16]
+    content:
+      style: "$caption"
+      align: [right, top]
+      wrap: false
+      text: "12"

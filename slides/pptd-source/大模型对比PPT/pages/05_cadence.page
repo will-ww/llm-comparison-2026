@@ -1,0 +1,79 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [48, 32, 400, 18]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 竞争格局
+  - elementId: title
+    elementType: text
+    bounds: [48, 54, 860, 34]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: 旗舰迭代缩短至 6–10 周，产品线收敛为「三档」
+  - elementId: bar
+    elementType: shape
+    bounds: [48, 94, 56, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: chart
+    elementType: image
+    bounds: [48, 108, 560, 350]
+    src: media/chart4_timeline.png
+    fit: {mode: contain}
+    border: {style: solid, width: 1, color: "$faint"}
+  - elementId: f1
+    elementType: text
+    bounds: [640, 112, 272, 100]
+    content:
+      style: "$body"
+      text: |
+        <p><span style="font-size:26px; color:$accent; font-family:阿里妈妈数黑体">6–10 周</span></p>
+        <p style="margin-top:4px">头部厂商旗舰更新间隔，OpenAI 13 个月完成 9 次发布；「最强模型」结论保质期通常不超过一个季度</p>
+  - elementId: sep1
+    elementType: shape
+    bounds: [640, 226, 272, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: f2
+    elementType: text
+    bounds: [640, 242, 272, 100]
+    content:
+      style: "$body"
+      text: |
+        <p><span style="font-size:26px; color:$accent; font-family:阿里妈妈数黑体">三档分层</span></p>
+        <p style="margin-top:4px">旗舰档 / 主力档 / 性价比档成为全行业统一打法，选型首先变成「选档位」</p>
+  - elementId: sep2
+    elementType: shape
+    bounds: [640, 356, 272, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: f3
+    elementType: text
+    bounds: [640, 372, 272, 100]
+    content:
+      style: "$body"
+      text: |
+        <p><span style="font-size:26px; color:$accent; font-family:阿里妈妈数黑体">$2/$10</span></p>
+        <p style="margin-top:4px">9 月最后两天，GPT-6.1 Sol 与 Gemini 4 Argon 在 24 小时内以完全相同定价发布——「前沿模型商品化地板价」</p>
+  - elementId: footer
+    elementType: text
+    bounds: [48, 510, 700, 16]
+    content:
+      style: "$caption"
+      wrap: false
+      text: 来源：各厂商官方发布页、ScriptByAI、Yahoo Finance（2026-02 至 2026-09）
+  - elementId: pageno
+    elementType: text
+    bounds: [880, 510, 32, 16]
+    content:
+      style: "$caption"
+      align: [right, top]
+      wrap: false
+      text: "05"

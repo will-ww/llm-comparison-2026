@@ -1,0 +1,86 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [48, 32, 400, 18]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 选型建议
+  - elementId: title
+    elementType: text
+    bounds: [48, 54, 860, 34]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: 先定约束，再选档位，最后才看榜单名次
+  - elementId: bar
+    elementType: shape
+    bounds: [48, 94, 56, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: table
+    elementType: table
+    bounds: [48, 112, 864, 372]
+    columnWidths: [0.24, 0.22, 0.22, 0.32]
+    rowHeights: [0.09, 0.1137, 0.1137, 0.1137, 0.1137, 0.1137, 0.1137, 0.1137, 0.1137, 0.1137]
+    style: "$default"
+    rows:
+      - - {text: 你的场景, fontSize: 10}
+        - {text: 首选, fontSize: 10}
+        - {text: 备选, fontSize: 10}
+        - {text: 理由, fontSize: 10}
+      - - {text: 复杂编码智能体 / 长程工程, fontSize: 10}
+        - {text: "Claude Opus 5.5", fontSize: 10, bold: true}
+        - {text: "Sonnet 5.5、GPT-6 Astra", fontSize: 10}
+        - {text: "Terminal-Bench / SWE-bench Pro 双纪录", fontSize: 10}
+      - - {text: 抽象推理 / 数学 / 研究, fontSize: 10}
+        - {text: "GPT-6 Astra", fontSize: 10, bold: true}
+        - {text: "GPT-6.1 Sol（成本 1/5）", fontSize: 10}
+        - {text: "ARC-AGI-2 约 95%，LiveBench 榜首", fontSize: 10}
+      - - {text: 长视频/音频理解、超大输出, fontSize: 10}
+        - {text: "Gemini 4 Argon", fontSize: 10, bold: true}
+        - {text: "Gemini 3.1 Pro", fontSize: 10}
+        - {text: "LVBench 91.7%，1M 输出；注意限 Fairwind", fontSize: 10}
+      - - {text: 日常对话与写作, fontSize: 10}
+        - {text: "Fable 5.1 / Sonnet 5.5", fontSize: 10, bold: true}
+        - {text: "GPT-5.6（ChatGPT 默认）", fontSize: 10}
+        - {text: "三大散文榜综合最佳；Sonnet 5.5 免费档可用", fontSize: 10}
+      - - {text: "高并发、成本敏感 API", fontSize: 10}
+        - {text: "DeepSeek V4 Flash / GPT-6 Luna", fontSize: 10, bold: true}
+        - {text: "Gemini 3.8 Flash", fontSize: 10}
+        - {text: "$0.1–0.7 价格带，性能够用", fontSize: 10}
+      - - {text: 私有化部署（国内合规）, fontSize: 10}
+        - {text: "GLM-5.3 / DeepSeek V4 Pro", fontSize: 10, bold: true}
+        - {text: "Qwen3.8 开源版", fontSize: 10}
+        - {text: "MIT 许可、中文能力强、数据不出域", fontSize: 10}
+      - - {text: 中文消费级体验 / 内容创作, fontSize: 10}
+        - {text: "豆包 2.0", fontSize: 10, bold: true}
+        - {text: "Kimi K3（长文/小说）", fontSize: 10}
+        - {text: "语言自然度最佳 + Seedance/Seedream 生态", fontSize: 10}
+      - - {text: 实时资讯 / 低限制场景, fontSize: 10}
+        - {text: "Grok 4.7", fontSize: 10, bold: true}
+        - {text: "—", fontSize: 10}
+        - {text: "唯一 X 实时接入，内容限制最少", fontSize: 10}
+      - - {text: 欧洲合规（GDPR）, fontSize: 10}
+        - {text: "Mistral Medium 3.5", fontSize: 10, bold: true}
+        - {text: 各家欧洲托管, fontSize: 10}
+        - {text: "主权合规优先于峰值性能", fontSize: 10}
+  - elementId: note
+    elementType: text
+    bounds: [48, 490, 800, 16]
+    content:
+      style: "$caption"
+      wrap: false
+      text: 头部模型间榜单差距（约 5 个指数分）已小于同一模型在不同任务类型间的表现方差
+  - elementId: pageno
+    elementType: text
+    bounds: [880, 510, 32, 16]
+    content:
+      style: "$caption"
+      align: [right, top]
+      wrap: false
+      text: "19"

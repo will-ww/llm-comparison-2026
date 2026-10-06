@@ -1,0 +1,114 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [48, 32, 400, 18]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 认知底座 · 一分钟
+  - elementId: title
+    elementType: text
+    bounds: [48, 54, 860, 34]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: 听懂本场演讲，只需要四个白话概念
+  - elementId: bar
+    elementType: shape
+    bounds: [48, 94, 56, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: c1h
+    elementType: text
+    bounds: [48, 122, 416, 30]
+    content:
+      fontSize: 17
+      fontFamily: 阿里妈妈数黑体
+      color: "$accent"
+      wrap: false
+      text: Token —— 计费的最小单位
+  - elementId: c1b
+    elementType: text
+    bounds: [48, 154, 416, 96]
+    content:
+      style: "$body"
+      text: |
+        <p>模型读写文字按 token 计量。100 万 token ≈ 60–80 万汉字。报价「$2/$10」即每处理 100 万个输入/输出 token 的美元价——这是后文所有价格对比的单位。</p>
+  - elementId: sep1
+    elementType: shape
+    bounds: [48, 262, 416, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: c2h
+    elementType: text
+    bounds: [48, 278, 416, 30]
+    content:
+      fontSize: 17
+      fontFamily: 阿里妈妈数黑体
+      color: "$accent"
+      wrap: false
+      text: 上下文窗口 —— 模型的工作台
+  - elementId: c2b
+    elementType: text
+    bounds: [48, 310, 416, 96]
+    content:
+      style: "$body"
+      text: |
+        <p>一次对话能「同时看到」的内容总量。1M token 的窗口可一次性放进两三本长篇小说。2026 年它已成为旗舰标配，差异转向「有效上下文」与「最大输出长度」。</p>
+  - elementId: c3h
+    elementType: text
+    bounds: [496, 122, 416, 30]
+    content:
+      fontSize: 17
+      fontFamily: 阿里妈妈数黑体
+      color: "$struct"
+      wrap: false
+      text: 智能体 —— 从聊天到干活
+  - elementId: c3b
+    elementType: text
+    bounds: [496, 154, 416, 96]
+    content:
+      style: "$body"
+      text: |
+        <p>不止于问答：能自己拆解任务、调用工具、连续多步执行并自我纠错，例如自动修复 bug、自动完成调研。这是 2026 年厂商投入最密集的能力方向。</p>
+  - elementId: sep2
+    elementType: shape
+    bounds: [496, 262, 416, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: c4h
+    elementType: text
+    bounds: [496, 278, 416, 30]
+    content:
+      fontSize: 17
+      fontFamily: 阿里妈妈数黑体
+      color: "$struct"
+      wrap: false
+      text: 开源权重 —— 数据主权的前提
+  - elementId: c4b
+    elementType: text
+    bounds: [496, 310, 416, 96]
+    content:
+      style: "$body"
+      text: |
+        <p>公开模型的「参数文件」，下载后可在自己的服务器运行，数据不出内网。对受数据安全监管约束的行业，这几乎是唯一合规路径——也是本场报告后半段的主线。</p>
+  - elementId: note
+    elementType: text
+    bounds: [48, 428, 864, 60]
+    content:
+      style: "$caption"
+      fontSize: 12
+      text: |
+        <p>另需知晓：「基准测试」是给模型的标准化考试，不同试卷（版本）分数不可直接比较；本报告所有排名均为 2026 年 10 月初的时间快照。完整术语表见报告附录。</p>
+  - elementId: pageno
+    elementType: text
+    bounds: [880, 510, 32, 16]
+    content:
+      style: "$caption"
+      align: [right, top]
+      wrap: false
+      text: "03"

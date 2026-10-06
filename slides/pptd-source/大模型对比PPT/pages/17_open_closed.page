@@ -1,0 +1,82 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [48, 32, 400, 18]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 结构性拐点
+  - elementId: title
+    elementType: text
+    bounds: [48, 54, 860, 34]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: 2026 开源拐点：美国开源退场，中国开源接棒
+  - elementId: bar
+    elementType: shape
+    bounds: [48, 94, 56, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: chart
+    elementType: image
+    bounds: [48, 112, 470, 320]
+    src: media/c5_params.png
+    fit: {mode: contain}
+    border: {style: solid, width: 1, color: "$faint"}
+  - elementId: table
+    elementType: table
+    bounds: [540, 112, 372, 320]
+    columnWidths: [0.36, 0.24, 0.40]
+    rowHeights: [0.10, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15]
+    style: "$default"
+    rows:
+      - - {text: 模型, fontSize: 10}
+        - {text: 许可证, fontSize: 10}
+        - {text: 自托管门槛, fontSize: 10}
+      - - {text: "DeepSeek V4 Flash", fontSize: 10}
+        - {text: MIT, fontSize: 10}
+        - {text: 小型集群, fontSize: 10}
+      - - {text: GLM-5.3, fontSize: 10}
+        - {text: MIT, fontSize: 10}
+        - {text: 单节点 8×H100, fontSize: 10}
+      - - {text: MiniMax M3, fontSize: 10}
+        - {text: 社区许可, fontSize: 10}
+        - {text: 中等集群, fontSize: 10}
+      - - {text: "Qwen3.8-2.4T", fontSize: 10}
+        - {text: 专属许可, fontSize: 10}
+        - {text: 多节点集群, fontSize: 10}
+      - - {text: Kimi K3, fontSize: 10}
+        - {text: 自定义*, fontSize: 10}
+        - {text: 多节点集群, fontSize: 10}
+      - - {text: "DeepSeek V4 Pro", fontSize: 10}
+        - {text: MIT, fontSize: 10}
+        - {text: 大型集群, fontSize: 10}
+  - elementId: note
+    elementType: text
+    bounds: [48, 448, 864, 46]
+    content:
+      style: "$caption"
+      fontSize: 11
+      lineHeight: 1.5
+      text: |
+        <p>开源能力榜前列已全面由中国厂商占据，许可证普遍宽松（MIT/Apache 2.0，允许商用与二次开发）；* Kimi K3 为自定义许可，商用前需审阅条款。对强监管行业与用量巨大的企业，「开源权重私有化 + 按场景路由」的 TCO 拐点已经到来。</p>
+  - elementId: footer
+    elementType: text
+    bounds: [48, 510, 700, 16]
+    content:
+      style: "$caption"
+      wrap: false
+      text: 来源：LargitData、七牛云、CellCog、shattered.io（2026-07 至 2026-10）
+  - elementId: pageno
+    elementType: text
+    bounds: [880, 510, 32, 16]
+    content:
+      style: "$caption"
+      align: [right, top]
+      wrap: false
+      text: "17"

@@ -1,0 +1,87 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [48, 32, 400, 18]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 能力维度 · 多模态与长输出
+  - elementId: title
+    elementType: text
+    bounds: [48, 54, 860, 34]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: 上下文 1M 已成标配，输出上限与全模态成为新分水岭
+  - elementId: bar
+    elementType: shape
+    bounds: [48, 94, 56, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: chart
+    elementType: image
+    bounds: [48, 112, 560, 330]
+    src: media/c3_output.png
+    fit: {mode: contain}
+    border: {style: solid, width: 1, color: "$faint"}
+  - elementId: p1
+    elementType: text
+    bounds: [640, 116, 272, 100]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>理解侧 Google 结构性领先</strong></p>
+        <p style="margin-top:4px"><span style="color:$muted">唯一文/图/音/视频/PDF 统一输入；Argon 长视频理解 91.7%，领先 GPT-6 Astra 约 4 个百分点。</span></p>
+  - elementId: sep1
+    elementType: shape
+    bounds: [640, 228, 272, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: p2
+    elementType: text
+    bounds: [640, 244, 272, 100]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>生成侧独立于语言榜</strong></p>
+        <p style="margin-top:4px"><span style="color:$muted">图像：OpenAI Images 2.5 四榜前二；视频：Gemini Omni 领跑，字节 Seedance 2.0 业界最佳级别。</span></p>
+  - elementId: sep2
+    elementType: shape
+    bounds: [640, 356, 272, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: p3
+    elementType: text
+    bounds: [640, 372, 272, 90]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>开源侧仅三款全模态</strong></p>
+        <p style="margin-top:4px"><span style="color:$muted">Qwen3.8-Max（API）、Kimi K3、MiniMax-M3；DeepSeek V4 与 GLM-5.3 主版本为纯文本。</span></p>
+  - elementId: note
+    elementType: text
+    bounds: [48, 470, 864, 30]
+    content:
+      style: "$caption"
+      fontSize: 11
+      text: |
+        <p>「语言 + 生成」一体化闭环目前只有 OpenAI、Google、字节、Meta 四家可提供——这是闭源生态相对开源阵营最实质的护城河之一。</p>
+  - elementId: footer
+    elementType: text
+    bounds: [48, 510, 700, 16]
+    content:
+      style: "$caption"
+      wrap: false
+      text: 来源：Morph、Fello AI、东方财富、LargitData（2026-09/10）
+  - elementId: pageno
+    elementType: text
+    bounds: [880, 510, 32, 16]
+    content:
+      style: "$caption"
+      align: [right, top]
+      wrap: false
+      text: "15"

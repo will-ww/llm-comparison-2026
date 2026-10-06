@@ -1,0 +1,79 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [48, 32, 400, 18]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 竞争格局
+  - elementId: title
+    elementType: text
+    bounds: [48, 54, 860, 34]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: 从「一超多强」到「三强轮庄」，头部差距史上最小
+  - elementId: bar
+    elementType: shape
+    bounds: [48, 94, 56, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: chart
+    elementType: image
+    bounds: [48, 112, 580, 382]
+    src: media/c1_aa_index.png
+    fit: {mode: contain}
+    border: {style: solid, width: 1, color: "$faint"}
+  - elementId: p1
+    elementType: text
+    bounds: [660, 118, 252, 118]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>9 月冠军三度易主</strong></p>
+        <p style="margin-top:4px"><span style="color:$muted">GPT-6 Astra（9/3）→ Opus 5.5（9/22）→ Gemini 4 Argon（9/30，1524.8 Elo 登顶 Arena 文本榜）。</span></p>
+  - elementId: sep1
+    elementType: shape
+    bounds: [660, 246, 252, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: p2
+    elementType: text
+    bounds: [660, 262, 252, 110]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>前五名仅差 5 分</strong></p>
+        <p style="margin-top:4px"><span style="color:$muted">AA 智能指数历史上最拥挤的头部区间；任何一家都可能在下个季度领先。</span></p>
+  - elementId: sep2
+    elementType: shape
+    bounds: [660, 382, 252, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: p3
+    elementType: text
+    bounds: [660, 398, 252, 100]
+    content:
+      style: "$body"
+      text: |
+        <p><strong>第二梯队换血</strong></p>
+        <p style="margin-top:4px"><span style="color:$muted">xAI 月度迭代稳居第四；Meta 关闭 Llama 前沿路线；中国六家旗舰 7–9 月密集换代。</span></p>
+  - elementId: footer
+    elementType: text
+    bounds: [48, 510, 700, 16]
+    content:
+      style: "$caption"
+      wrap: false
+      text: 来源：Artificial Analysis、LMArena、Kalshi 预测市场、Crypto Briefing（2026-09/10）
+  - elementId: pageno
+    elementType: text
+    bounds: [880, 510, 32, 16]
+    content:
+      style: "$caption"
+      align: [right, top]
+      wrap: false
+      text: "04"

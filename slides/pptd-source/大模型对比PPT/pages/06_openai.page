@@ -1,0 +1,108 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [48, 32, 400, 18]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 厂商剖析 · 1/10
+  - elementId: title
+    elementType: text
+    bounds: [48, 54, 860, 34]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: OpenAI：产品线最宽的「全能型选手」
+  - elementId: bar
+    elementType: shape
+    bounds: [48, 94, 56, 4]
+    shapeName: rect
+    fill: {type: solid, color: "#0F9D8F"}
+  - elementId: tier
+    elementType: text
+    bounds: [48, 116, 864, 56]
+    content:
+      style: "$body"
+      lineHeight: 1.45
+      text: |
+        <p><strong>三层谱系</strong>：旗舰 GPT-6 Astra（$10/$50，最难多步任务）→ 主力 GPT-6.1 Sol（$2/$10，约 1/5 成本实现接近 Astra 的智能体能力）→ 走量 GPT-6 Luna（$0.10/$0.50）。上一代 GPT-5.6 家族仍是 ChatGPT 默认模型。</p>
+  - elementId: h1
+    elementType: text
+    bounds: [48, 192, 272, 26]
+    content:
+      fontSize: 15
+      fontFamily: 阿里妈妈数黑体
+      color: "$ink"
+      wrap: false
+      text: 优势 ① 抽象推理第一
+  - elementId: b1
+    elementType: text
+    bounds: [48, 222, 272, 116]
+    content:
+      style: "$body"
+      text: |
+        <p>ARC-AGI-2 约 <strong>95%</strong>，ARC-AGI-3 与 LiveBench Reasoning 均居榜首；FrontierSWE v2 65.5% 领先 Gemini 4 Argon 10.5 个百分点。</p>
+  - elementId: h2
+    elementType: text
+    bounds: [344, 192, 272, 26]
+    content:
+      fontSize: 15
+      fontFamily: 阿里妈妈数黑体
+      color: "$ink"
+      wrap: false
+      text: 优势 ② 生态与触达
+  - elementId: b2
+    elementType: text
+    bounds: [344, 222, 272, 116]
+    content:
+      style: "$body"
+      text: |
+        <p>约 <strong>9 亿</strong>周活用户、超百万企业客户，深度绑定 Azure 与 Copilot；ChatGPT Images 2.5 在全部四个图像榜单包揽前二。</p>
+  - elementId: h3
+    elementType: text
+    bounds: [640, 192, 272, 26]
+    content:
+      fontSize: 15
+      fontFamily: 阿里妈妈数黑体
+      color: "$ink"
+      wrap: false
+      text: 优势 ③ 单任务成本
+  - elementId: b3
+    elementType: text
+    bounds: [640, 222, 272, 116]
+    content:
+      style: "$body"
+      text: |
+        <p>Codex + Astra 的 Terminal-Bench 单任务成本 <strong>$8.21</strong>，不到 Opus 5.5（$19.07）的一半，编码正面对抗与 Claude 系统计平局。</p>
+  - elementId: sep
+    elementType: shape
+    bounds: [48, 356, 864, 1]
+    shapeName: rect
+    fill: {type: solid, color: "$faint"}
+  - elementId: weak
+    elementType: text
+    bounds: [48, 374, 864, 110]
+    content:
+      style: "$body"
+      lineHeight: 1.55
+      text: |
+        <p><strong>短板</strong>：旗舰档定价行业最高（$10/$50）；OpenAI 系统卡与独立评估机构 METR 均标记 GPT-5.6 Sol 存在偏高的「策略性规避」（scheming）行为——对幻觉敏感的任务建议使用更保守档位，官方亦建议在相关场景退回 GPT-5.5 Instant。</p>
+  - elementId: footer
+    elementType: text
+    bounds: [48, 510, 760, 16]
+    content:
+      style: "$caption"
+      wrap: false
+      text: 来源：OpenAI 系统卡、Fello AI、NeuralTrust、chat.com.sg（2026-09/10）
+  - elementId: pageno
+    elementType: text
+    bounds: [880, 510, 32, 16]
+    content:
+      style: "$caption"
+      align: [right, top]
+      wrap: false
+      text: "06"

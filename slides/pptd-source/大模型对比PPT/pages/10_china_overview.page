@@ -1,0 +1,95 @@
+pageType: content
+background:
+  type: solid
+  color: "$bg"
+elements:
+  - elementId: kicker
+    elementType: text
+    bounds: [48, 32, 400, 18]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: 厂商剖析 · 中国阵营
+  - elementId: title
+    elementType: text
+    bounds: [48, 54, 860, 34]
+    content:
+      style: "$pageTitle"
+      wrap: false
+      text: 六家旗舰 7–9 月密集换代，四家开放权重
+  - elementId: bar
+    elementType: shape
+    bounds: [48, 94, 56, 4]
+    shapeName: rect
+    fill: {type: solid, color: "$accent"}
+  - elementId: table
+    elementType: table
+    bounds: [48, 116, 864, 330]
+    columnWidths: [0.11, 0.16, 0.17, 0.13, 0.11, 0.32]
+    rowHeights: [0.10, 0.15, 0.15, 0.15, 0.15, 0.15, 0.15]
+    style: "$default"
+    rows:
+      - - {text: 厂商, fontSize: 10}
+        - {text: 旗舰模型, fontSize: 10}
+        - {text: 总参/激活, fontSize: 10}
+        - {text: 输入/输出价, fontSize: 10}
+        - {text: 开放性质, fontSize: 10}
+        - {text: 定位一句话, fontSize: 10}
+      - - {text: DeepSeek, fontSize: 10}
+        - {text: "V4 Pro / Flash", fontSize: 10, bold: true}
+        - {text: "1.6T/49B · 284B/13B", fontSize: 10}
+        - {text: "$0.66/$1.98 起", fontSize: 10}
+        - {text: MIT 开源, fontSize: 10, color: "$struct", bold: true}
+        - {text: "开源阵营的「成本核弹头」，1/60 价格逼近 Fable 5 智能体水平", fontSize: 10}
+      - - {text: 阿里巴巴, fontSize: 10}
+        - {text: "Qwen3.8-Max", fontSize: 10, bold: true}
+        - {text: "2.4T/95B", fontSize: 10}
+        - {text: "$2/$6", fontSize: 10}
+        - {text: 权重开源, fontSize: 10, color: "$struct", bold: true}
+        - {text: "开源+多模态的唯一组合；0902 快照智能体编码近乎翻倍", fontSize: 10}
+      - - {text: 月之暗面, fontSize: 10}
+        - {text: "Kimi K3", fontSize: 10, bold: true}
+        - {text: "2.8T/104B", fontSize: 10}
+        - {text: "$3/$15", fontSize: 10}
+        - {text: MIT 权重*, fontSize: 10, color: "$struct", bold: true}
+        - {text: "史上最大开源权重模型，智能指数 57 创开源历史最高排名", fontSize: 10}
+      - - {text: 智谱, fontSize: 10}
+        - {text: "GLM-5.3", fontSize: 10, bold: true}
+        - {text: "753B/40B", fontSize: 10}
+        - {text: "$1.4/$4.4", fontSize: 10}
+        - {text: MIT 开源, fontSize: 10, color: "$struct", bold: true}
+        - {text: "纯后训练 Scaling 提升编程约 50%；网络安全 CyberGym 全球第一", fontSize: 10}
+      - - {text: 字节跳动, fontSize: 10}
+        - {text: "豆包 2.0 Pro", fontSize: 10, bold: true}
+        - {text: 未公开, fontSize: 10}
+        - {text: "≈$0.44/$2.2", fontSize: 10}
+        - {text: 闭源, fontSize: 10}
+        - {text: "C 端体验与 AIGC 生态（Seedance 视频 / Seedream 图像）", fontSize: 10}
+      - - {text: MiniMax, fontSize: 10}
+        - {text: "M3", fontSize: 10, bold: true}
+        - {text: "428B/23B", fontSize: 10}
+        - {text: "$0.6/$2.4", fontSize: 10}
+        - {text: 社区许可, fontSize: 10, color: "$struct", bold: true}
+        - {text: "前沿编程+1M 上下文+原生多模态三要素齐备的开源模型", fontSize: 10}
+  - elementId: note
+    elementType: text
+    bounds: [48, 456, 864, 40]
+    content:
+      style: "$caption"
+      text: |
+        <p>* Kimi K3 权重按 MIT 协议开放（2026-07-27）。价格均为公开牌价低谷档（美元/百万 token），豆包按 3.2 元/16 元人民币折算。四家开放权重直接改写了开源模型的能力上限。</p>
+  - elementId: footer
+    elementType: text
+    bounds: [48, 510, 700, 16]
+    content:
+      style: "$caption"
+      wrap: false
+      text: 来源：各厂商技术报告、博客园、七牛云、澎湃新闻（2026-05 至 2026-10）
+  - elementId: pageno
+    elementType: text
+    bounds: [880, 510, 32, 16]
+    content:
+      style: "$caption"
+      align: [right, top]
+      wrap: false
+      text: "10"
