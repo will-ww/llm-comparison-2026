@@ -17,6 +17,11 @@
 - 标题候选 ×3、简介、标签（大模型 / AI / Claude / GPT / Gemini / DeepSeek / Kimi / 开源模型 / 行业分析）
 - 投稿建议：B 站「科技 → 计算机技术」分区
 
+## 发布结果
+
+- **视频已成功发布至 B 站**：https://www.bilibili.com/video/BV11HHZ6fEku
+- 实际采用了本仓库的 AI 生成封面 `video/大模型视频封面_1920x1080.png`
+
 ## 踩坑
 
 - PPTD 元素字段名误用（`id/type/shape` → 正确为 `elementId/elementType/shapeName`），`radius` 非合法字段 → check 命令报错后逐一修正
